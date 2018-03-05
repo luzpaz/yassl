@@ -354,7 +354,7 @@ int SSL_connect(SSL* ssl)
         return SSL_SUCCESS;
 
     default :
-        return SSL_FATAL_ERROR; // unkown state
+        return SSL_FATAL_ERROR; // unknown state
     }
 }
 
@@ -626,7 +626,7 @@ int SSL_get_error(SSL* ssl, int /*previous*/)
 
 /* turn on yaSSL zlib compression
    returns 0 for success, else error (not built in)
-   only need to turn on for client, becuase server on by default if built in
+   only need to turn on for client, because server on by default if built in
    but calling for server will tell you whether it's available or not
 */
 int yaSSL_set_compression(SSL* ssl)
@@ -1013,7 +1013,7 @@ void OpenSSL_add_all_algorithms()  // compatibility only
 {}
 
 
-int SSL_library_init()  // compatiblity only
+int SSL_library_init()  // compatibility only
 {
     return 1;
 }

@@ -256,7 +256,7 @@ static int init_ssl(CLI *c) {
         if(c->local_rfd.fd==c->local_wfd.fd)
             SSL_set_fd(c->ssl, c->local_rfd.fd);
         else {
-           /* Does it make sence to have SSL on STDIN/STDOUT? */
+           /* Does it make sense to have SSL on STDIN/STDOUT? */
             SSL_set_rfd(c->ssl, c->local_rfd.fd);
             SSL_set_wfd(c->ssl, c->local_wfd.fd);
         }

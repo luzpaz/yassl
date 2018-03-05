@@ -92,7 +92,7 @@ input_buffer::~input_buffer()
 }
 
 
-// users can pass defualt zero length buffer and then allocate
+// users can pass default zero length buffer and then allocate
 void input_buffer::allocate(uint s) 
 { 
     if (error_ == 0) {
@@ -293,7 +293,7 @@ void output_buffer::set_current(uint c)
 }
 
 
-// users can pass defualt zero length buffer and then allocate
+// users can pass default zero length buffer and then allocate
 void output_buffer::allocate(uint s) 
 { 
     buffer_ = NEW_YS byte[s]; end_ = buffer_ + s; 

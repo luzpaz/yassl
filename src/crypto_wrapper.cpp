@@ -27,7 +27,7 @@
 /*  The crypto wrapper source implements the policies for the cipher
  *  components used by SSL.
  *
- *  The implementation relies on a specfic library, taoCrypt.
+ *  The implementation relies on a specific library, taoCrypt.
  */
 
 #if !defined(USE_CRYPTOPP_LIB)
@@ -451,7 +451,7 @@ void DES_EDE::decrypt(byte* plain, const byte* cipher, unsigned int sz)
 }
 
 
-// Implementation of alledged RC4
+// Implementation of alleged RC4
 struct RC4::RC4Impl {
     TaoCrypt::ARC4::Encryption encryption;
     TaoCrypt::ARC4::Decryption decryption;

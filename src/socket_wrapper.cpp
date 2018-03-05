@@ -151,7 +151,7 @@ uint Socket::receive(byte* buf, unsigned int sz, int flags)
 
     int recvd = ::recv(socket_, reinterpret_cast<char *>(buf), sz, flags);
 
-    // idea to seperate error from would block by arnetheduck@gmail.com
+    // idea to separate error from would block by arnetheduck@gmail.com
     if (recvd == -1) {
         if (get_lastError() == SOCKET_EWOULDBLOCK || 
             get_lastError() == SOCKET_EAGAIN) {

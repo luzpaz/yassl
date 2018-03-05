@@ -307,7 +307,7 @@ void cipherFinished(SSL& ssl, Finished& fin, output_buffer& output)
     HandShakeHeader   hsHeader;
     buildHeaders(ssl, hsHeader, rlHeader, fin);
     rlHeader.length_ = sz - RECORD_HEADER;   // record header includes mac
-                                             // and pad, hanshake doesn't
+                                             // and pad, handshake doesn't
     input_buffer iv;
     if (ssl.isTLSv1_1() && ssl.getSecurity().get_parms().cipher_type_== block){
         iv.allocate(blockSz);
@@ -359,7 +359,7 @@ void buildMessage(SSL& ssl, output_buffer& output, const Message& msg)
     RecordLayerHeader rlHeader;
     buildHeader(ssl, rlHeader, msg);
     rlHeader.length_ = sz - RECORD_HEADER;   // record header includes mac
-                                             // and pad, hanshake doesn't
+                                             // and pad, handshake doesn't
     input_buffer iv;
     if (ssl.isTLSv1_1() && ssl.getSecurity().get_parms().cipher_type_== block){
         iv.allocate(blockSz);

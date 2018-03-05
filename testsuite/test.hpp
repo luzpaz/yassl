@@ -195,7 +195,7 @@ static int PasswordCallBack(char* passwd, int sz, int rw, void* userdata)
 
 inline void store_ca(SSL_CTX* ctx)
 {
-    // To allow testing from serveral dirs
+    // To allow testing from several dirs
     if (SSL_CTX_load_verify_locations(ctx, caCert, 0) != SSL_SUCCESS)
         if (SSL_CTX_load_verify_locations(ctx, caCert2, 0) != SSL_SUCCESS)
             if (SSL_CTX_load_verify_locations(ctx, caCert3, 0) != SSL_SUCCESS)
@@ -222,7 +222,7 @@ inline void set_certs(SSL_CTX* ctx)
     store_ca(ctx);
     SSL_CTX_set_default_passwd_cb(ctx, PasswordCallBack);
 
-    // To allow testing from serveral dirs
+    // To allow testing from several dirs
     if (SSL_CTX_use_certificate_file(ctx, cert, SSL_FILETYPE_PEM)
         != SSL_SUCCESS)
         if (SSL_CTX_use_certificate_file(ctx, certSuite, SSL_FILETYPE_PEM)
@@ -248,7 +248,7 @@ inline void set_serverCerts(SSL_CTX* ctx)
     store_ca(ctx);
     SSL_CTX_set_default_passwd_cb(ctx, PasswordCallBack);
 
-    // To allow testing from serveral dirs
+    // To allow testing from several dirs
     if (SSL_CTX_use_certificate_file(ctx, svrCert, SSL_FILETYPE_PEM)
         != SSL_SUCCESS)
         if (SSL_CTX_use_certificate_file(ctx, svrCert2, SSL_FILETYPE_PEM)
@@ -273,7 +273,7 @@ inline void set_dsaServerCerts(SSL_CTX* ctx)
 {
     store_ca(ctx);
 
-    // To allow testing from serveral dirs
+    // To allow testing from several dirs
     if (SSL_CTX_use_certificate_file(ctx, dsaCert, SSL_FILETYPE_PEM)
         != SSL_SUCCESS)
         if (SSL_CTX_use_certificate_file(ctx, dsaCert2, SSL_FILETYPE_PEM)

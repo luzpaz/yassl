@@ -129,11 +129,11 @@ void SetErrorString(YasslError error, char* buffer)
         break; 
 
     case certificate_error :
-        strncpy(buffer, "unable to proccess cerificate", max);
+        strncpy(buffer, "unable to process cerificate", max);
         break;
 
     case privateKey_error :
-        strncpy(buffer, "unable to proccess private key, bad format", max);
+        strncpy(buffer, "unable to process private key, bad format", max);
         break;
 
     case badVersion_error :
@@ -223,7 +223,7 @@ void SetErrorString(YasslError error, char* buffer)
         break;
 
     case OBJECT_ID_E :
-        strncpy(buffer, "ASN: bad Ojbect ID Header", max);
+        strncpy(buffer, "ASN: bad Object ID Header", max);
         break;
 
     case TAG_NULL_E :

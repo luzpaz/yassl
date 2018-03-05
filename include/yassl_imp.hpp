@@ -670,7 +670,7 @@ struct Parameters {
     bool                 pending_;                  
     bool                 resumable_;                  // new conns by session
     uint16               encrypt_size_;               // current msg encrypt sz
-    Cipher               suite_[SUITE_LEN];           // choosen suite
+    Cipher               suite_[SUITE_LEN];           // chosen suite
     uint8                suites_size_;
     Cipher               suites_[MAX_SUITE_SZ];
     char                 cipher_name_[MAX_SUITE_NAME];

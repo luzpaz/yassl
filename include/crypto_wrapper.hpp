@@ -30,7 +30,7 @@
  *
  *  1) MAC, the Message Authentication Code used for each Message
  *  2) Bulk Cipher, the Cipher used to encrypt/decrypt each Message
- *  3) Atuhentication, the Digitial Signing/Verifiaction scheme used
+ *  3) Authentication, the Digital Signing/Verification scheme used
  *
  *  This header doesn't rely on a specific crypto libraries internals,
  *  only the implementation should.
@@ -250,7 +250,7 @@ private:
 };
 
 
-// Alledged RC4
+// Alleged RC4
 class RC4 : public BulkCipher {
 public:
     void encrypt(byte*, const byte*, unsigned int);
@@ -331,7 +331,7 @@ struct NO_Auth : public Auth {
 };
 
 
-// Digitial Signature Standard scheme
+// Digital Signature Standard scheme
 class DSS : public Auth {
 public:
     void sign(byte*, const byte*, unsigned int, const RandomPool&);

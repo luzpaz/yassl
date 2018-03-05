@@ -88,7 +88,7 @@ public:
     
     ~input_buffer();
 
-    // users can pass defualt zero length buffer and then allocate
+    // users can pass default zero length buffer and then allocate
     void allocate(uint s);
 
     // for passing to raw writing functions at beginning, then use add_size
@@ -165,7 +165,7 @@ public:
 
     void set_current(uint c);
 
-    // users can pass defualt zero length buffer and then allocate
+    // users can pass default zero length buffer and then allocate
     void allocate(uint s);
 
     // for passing to reading functions when finished
@@ -198,8 +198,8 @@ inline void checked_delete(T* p)
 }
 
 
-// checked delete functor increases effeciency, no indirection on function call
-// sets pointer to zero so safe for std conatiners
+// checked delete functor increases efficiency, no indirection on function call
+// sets pointer to zero so safe for std containers
 struct del_ptr_zero
 {
     template <typename T>
