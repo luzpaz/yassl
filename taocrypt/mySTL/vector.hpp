@@ -31,7 +31,7 @@
 #ifndef mySTL_VECTOR_HPP
 #define mySTL_VECTOR_HPP
 
-#include "helpers.hpp"    // construct, destory, fill, etc.
+#include "helpers.hpp"    // construct, destroy, fill, etc.
 #include "algorithm.hpp"  // swap
 
 

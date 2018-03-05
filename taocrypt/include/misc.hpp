@@ -170,7 +170,7 @@ void CleanUp();
 
 
 // Turn on ia32 ASM for Ciphers and Message Digests
-// Seperate define since these are more complex, use member offsets
+// Separate define since these are more complex, use member offsets
 // and user may want to turn off while leaving Big Integer optos on 
 #if defined(TAOCRYPT_X86ASM_AVAILABLE) && !defined(DISABLE_TAO_ASM)
     #define TAO_ASM
@@ -251,7 +251,7 @@ void CleanUp();
 #endif	// TAOCRYPT_WIN32_AVAILABLE
 
 
-// ****************** tempalte stuff *******************
+// ****************** template stuff *******************
 
 
 #if defined(TAOCRYPT_MANUALLY_INSTANTIATE_TEMPLATES) && \

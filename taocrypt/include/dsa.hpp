@@ -24,7 +24,7 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
 
-/* dsa.hpp provides Digitial Signautre Algorithm see FIPS 186-2
+/* dsa.hpp provides Digital Signautre Algorithm see FIPS 186-2
 */
 
 #ifndef TAO_CRYPT_DSA_HPP

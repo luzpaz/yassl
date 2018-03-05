@@ -2616,7 +2616,7 @@ AC_LIBTOOL_PROG_LD_HARDCODE_LIBPATH($1)
 AC_LIBTOOL_SYS_LIB_STRIP
 AC_LIBTOOL_DLOPEN_SELF($1)
 
-# Report which librarie types wil actually be built
+# Report which librarie types will actually be built
 AC_MSG_CHECKING([if libtool supports shared libraries])
 AC_MSG_RESULT([$can_build_shared])
 
@@ -3486,10 +3486,10 @@ case $host_os in
 	  *)
 	    # The C++ compiler is used as linker so we must use $wl
 	    # flag to pass the commands to the underlying system
-	    # linker. We must also pass each convience library through
+	    # linker. We must also pass each convenience library through
 	    # to the system linker between allextract/defaultextract.
 	    # The C++ compiler will combine linker options so we
-	    # cannot just pass the convience library names through
+	    # cannot just pass the convenience library names through
 	    # without $wl.
 	    # Supported since Solaris 2.6 (maybe 2.5.1?)
 	    _LT_AC_TAGVAR(whole_archive_flag_spec, $1)='${wl}-z ${wl}allextract`for conv in $convenience\"\"; do test -n \"$conv\" && new_convenience=\"$new_convenience,$conv\"; done; $echo \"$new_convenience\"` ${wl}-z ${wl}defaultextract'
@@ -5865,7 +5865,7 @@ EOF
       solaris2.[[0-5]] | solaris2.[[0-5]].*) ;;
       *)
  	# The compiler driver will combine linker options so we
- 	# cannot just pass the convience library names through
+ 	# cannot just pass the convenience library names through
  	# without $wl, iff we do not link with $LD.
  	# Luckily, gcc supports the same syntax we need for Sun Studio.
  	# Supported since Solaris 2.6 (maybe 2.5.1?)
@@ -6321,7 +6321,7 @@ AC_CACHE_CHECK([whether deplibs are loaded by dlopen],
   osf[[1234]]*)
     # dlopen did load deplibs (at least at 4.x), but until the 5.x series,
     # it did *not* use an RPATH in a shared library to find objects the
-    # library depends on, so we explictly say `no'.
+    # library depends on, so we explicitly say `no'.
     libltdl_cv_sys_dlopen_deplibs=no
     ;;
   osf5.0|osf5.0a|osf5.1)

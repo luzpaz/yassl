@@ -108,7 +108,7 @@ void OS_Seed::GenerateSeed(byte* output, word32 sz)
 #include <nks/thread.h>
 #include <nks/plat.h>
 
-// Loop on high resulution Read Time Stamp Counter
+// Loop on high resolution Read Time Stamp Counter
 static void NetwareSeed(byte* output, word32 sz)
 {
     word32 tscResult;
